@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GapFinderPro - Bridge Your Skill Gaps</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="modern-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">🎯</div>
+                    <span class="logo-text">GapFinderPro</span>
+                </div>
+                <div class="nav-center">
+                    <a href="#" class="nav-link active">HOME</a>
+                    <a href="#" class="nav-link">SOLUTIONS</a>
+                    <a href="#" class="nav-link">TOOLS</a>
+                    <a href="learning-path.html" class="nav-link">LEARNING PATH</a>
+                    <a href="#" class="nav-link">RESOURCES</a>
+                </div>
+                <div class="nav-right">
+                    <button class="login-btn">Login</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero-modern">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Go From
+                    <span class="highlight-orange">I Know This</span> to <span class="highlight-green">I Built This</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Stop consuming. Start creating. Build real projects that get you hired.
+                </p>
+                <button class="cta-button">Start Building Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Company Logos Section -->
+    <section class="companies-section">
+        <div class="container">
+            <h2 class="companies-heading">They Started Like You. Now They Work Here</h2>
+            <div class="companies-carousel">
+                <div class="companies-track">
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png" alt="Microsoft">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/512px-Amazon_logo.svg.png" alt="Amazon">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/512px-Shopify_logo_2018.svg.png" alt="Shopify">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Loom_logo.svg/512px-Loom_logo.svg.png" alt="Loom">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Linear_logo.svg/512px-Linear_logo.svg.png" alt="Linear">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/512px-McDonald%27s_Golden_Arches.svg.png" alt="Nike">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/512px-Vercel_logo_black.svg.png" alt="Vercel">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/512px-Nvidia_logo.svg.png" alt="NVIDIA">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Adobe_Systems_logo_and_wordmark.svg/512px-Adobe_Systems_logo_and_wordmark.svg.png" alt="Adobe">
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png" alt="Microsoft">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/512px-Amazon_logo.svg.png" alt="Amazon">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/512px-Shopify_logo_2018.svg.png" alt="Shopify">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <div class="container">
+        <div class="steps" style="display: none;">
+            <div class="step active">
+                <div class="step-number">1</div>
+                <div class="step-title">Input Your Skills</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-title">Select Target Role</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-title">Analyze Gaps</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-title">Get Recommendations</div>
+            </div>
+        </div>
+        
+        <div class="main-content" id="analyzer">
+            <div class="section">
+                <h2 class="section-title">💼 Input Your Skills</h2>
+                
+                <div class="tabs">
+                    <div class="tab active" id="tab-text">Enter Skills Manually</div>
+                    <div class="tab" id="tab-resume">Upload Resume</div>
+                </div>
+                
+                <div class="tab-content active" id="content-text">
+                    <div class="input-group">
+                        <label for="skills">Enter your skills (separated by commas)</label>
+                        <textarea id="skills" rows="5" placeholder="Python, JavaScript, React, SQL, Project Management..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="content-resume">
+                    <div class="input-group">
+                        <label>Upload your resume (PDF, DOCX)</label>
+                        <div class="upload-area" id="drop-area">
+                            <div class="upload-icon">📄</div>
+                            <p>Drag & drop your resume here or <strong>click to browse</strong></p>
+                            <input type="file" id="file-input" style="display: none;">
+                            <p id="file-name" style="margin-top: 10px; color: var(--primary);"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">🎯 Select Target Role</h2>
+                <div class="input-group">
+                    <label for="role">Choose the role you're targeting</label>
+                    <select id="role">
+                        <option value="">Select a role</option>
+                        <option value="fullstack">Full Stack Developer</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="data_scientist">Data Scientist</option>
+                        <option value="data_analyst">Data Analyst</option>
+                        <option value="machine_learning">Machine Learning Engineer</option>
+                        <option value="devops">DevOps Engineer</option>
+                        <option value="cloud">Cloud Engineer</option>
+                        <option value="cybersecurity">Cybersecurity Analyst</option>
+                        <option value="project_manager">Project Manager</option>
+                        <option value="product_manager">Product Manager</option>
+                        <option value="ui_ux">UI/UX Designer</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="experience">Your experience level</label>
+                    <select id="experience">
+                        <option value="beginner">Beginner (0-1 years)</option>
+                        <option value="intermediate">Intermediate (1-3 years)</option>
+                        <option value="advanced">Advanced (3-5 years)</option>
+                        <option value="expert">Expert (5+ years)</option>
+                    </select>
+                </div>
+                
+                <button class="cta-btn" id="analyze-btn" style="width: 100%;">Analyze My Skills</button>
+            </div>
+            
+            <div class="results-section" id="results">
+                <div class="section">
+                    <h2 class="section-title">📊 Skill Gap Analysis</h2>
+                    
+                    <div class="results-card">
+                        <h3>Your Current Skills</h3>
+                        <div class="skill-list" id="current-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">SQL</span>
+                            
+                        </div>
+                        
+                        <h3>Skills You Need for <span id="target-role">Full Stack Developer</span></h3>
+                        <div class="skill-list" id="required-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag missing">Node.js</span>
+                            <span class="skill-tag missing">Docker</span>
+                            <span class="skill-tag missing">AWS</span>
+                            <span class="skill-tag missing">CI/CD</span>
+                        </div>
+                        
+                        <h3>Readiness Score</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                        <p>You're <strong>65%</strong> ready for this role. Focus on the missing skills below to increase your chances!</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">📚 Recommended Courses & Certifications</h2>
+                    
+                    <div class="courses-section" id="courses">
+                        <div class="course-card">
+                            <div class="course-img">
+                              <img src="https://cdn.prod.website-files.com/6449405754e757db07f25327/665642ccf15387c17b7ddee2_node.webp" alt="Node.js Course Image">
+                            </div>
+                            <div class="course-content">
+                              <div class="course-provider">Udemy</div>
+                              <h3 class="course-title">Complete Node.js Developer Course</h3>
+                              <p>Learn Node.js by building real-world applications with Node.js, Express, MongoDB, Jest, and more!</p>
+                              <div class="course-info">
+                                <span>⭐ 4.8/5 (9,430 reviews)</span>
+                                <span>⏱ 29 hours</span>
+                              </div>
+                              <a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/?couponCode=LEARNNOWPLANS" target="_blank" class="course-btn">View Course</a>
+                            </div>
+                        </div>
+                          
+                        
+                        <div class="course-card">
+                            <div class="course-img">
+                                <a href="https://www.linkedin.com/learning/docker-essential-training" target="_blank">
+                                    <img src="https://media.licdn.com/dms/image/v2/C4E0DAQEtvIIyON_IDQ/learning-public-crop_288_512/learning-public-crop_288_512/0/1568666454470?e=2147483647&v=beta&t=Ai_4i2bsHony91mJBPbAtyf8XkLEaBJtBjw5RCKb2Zs" alt="Docker Course Image">
+                                </a>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-provider">LinkedIn Learning</div>
+                                <h3 class="course-title">Docker Essential Training</h3>
+                                <p>Learn Docker from scratch and start containerizing your applications for efficient deployment.</p>
+                                <div class="course-info">
+                                    <span>⭐ 4.7/5 (2,180 reviews)</span>
+                                    <span>12 hours</span>
+                                </div>
+                                <a href="https://www.linkedin.com/learning/docker-essential-training" target="_blank" class="course-btn">View Course</a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="https://avatars.githubusercontent.com/u/2232217?s=280&v=4" alt="AWS Course Image">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-provider">Amazon Web Services</div>
+                                <h3 class="course-title">AWS Certified Developer Associate</h3>
+                                <p>Master AWS services and earn a certification that proves your cloud expertise.</p>
+                                <div class="course-info">
+                                    <span>⭐ 4.9/5 (5,670 reviews)</span>
+                                    <span>25 hours</span>
+                                </div>
+                                <a href="https://aws.amazon.com/training/?trk=5515c3d3-c971-4112-a3c2-01fdfbde40c9&sc_channel=ps&ef_id=Cj0KCQjwqcO_BhDaARIsACz62vMETDg6B7t_H07b7nR5uv3fpptc9qBzHBkyuG69Qsuz8meioh5RsT8aAnuGEALw_wcB:G:s&s_kwcid=AL!4422!3!472839476043!e!!g!!amazon%20ec2%20training!11363780097!110903194226&gclid=Cj0KCQjwqcO_BhDaARIsACz62vMETDg6B7t_H07b7nR5uv3fpptc9qBzHBkyuG69Qsuz8meioh5RsT8aAnuGEALw_wcB" class="course-btn" target="_blank">View Course</a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D12AQHFNRDblsU1xQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1677528528545?e=2147483647&v=beta&t=eyPCiiFetWz9wC8A-2TM_Whvul7DwcZQouin8svwJfc"          >               
+                            </div>
+                            <div class="course-content">
+                                <div class="course-provider">Coursera</div>
+                                <h3 class="course-title">CI/CD with Jenkins & GitHub Actions</h3>
+                                <p>Learn how to implement continuous integration and deployment pipelines for your projects.</p>
+                                <div class="course-info">
+                                    <span>⭐ 4.6/5 (3,120 reviews)</span>
+                                    <span>18 hours</span>
+                                </div>
+                                <a href="https://www.coursera.org/learn/continuous-integration-and-continuous-delivery-ci-cd" class="course-btn" target="_blank">View Course</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="George Harris" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <span class="testimonial-name">George Harris</span>
+                            <span class="testimonial-role">Full Stack Developer</span>
+                        </div>
+                        <div class="verified-badge">✓</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>I've watched all JSM's YouTube videos, but what's available on here is just next level. It's clearer, deeper, and actually helps me build things that matter.</p>
+                        <div class="testimonial-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="Arjun Mehta" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <span class="testimonial-name">Arjun Mehta</span>
+                            <span class="testimonial-role">Software Developer</span>
+                        </div>
+                        <div class="verified-badge">✓</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Recently joined JSM Pro, and got my first real dev job in just a few months. It gave me exactly what I needed to switch careers. Staying subscribed for the community! :)</p>
+                        <div class="testimonial-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Agus Pratama" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <span class="testimonial-name">Agus Pratama</span>
+                            <span class="testimonial-role">Web Developer</span>
+                        </div>
+                        <div class="verified-badge">✓</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>I was scared of AI taking my job soon but Adrian taught me some stuff that my boss loved and now I'm not worried at all! Might even get promoted!!!</p>
+                        <div class="testimonial-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face" alt="Jack Wilson" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <span class="testimonial-name">Jack Wilson</span>
+                            <span class="testimonial-role">Frontend Developer</span>
+                        </div>
+                        <div class="verified-badge">✓</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>After going through the Next.js course I was able to optimize my work's codebase and finally got that raise! Totally worth it.</p>
+                        <div class="testimonial-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">GapFinderPro</h3>
+                    <p>Helping professionals bridge their skill gaps and reach their career goals through personalized learning recommendations.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partner Programs</a></li>
+                        <li><a href="#">Career Research</a></li>
+                        <li><a href="#">Learning Paths</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 GapFinderPro. All rights reserved. | Developed for Hackathon
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Tab switching functionality
+        document.getElementById('tab-text').addEventListener('click', function() {
+            document.getElementById('tab-text').classList.add('active');
+            document.getElementById('tab-resume').classList.remove('active');
+            document.getElementById('content-text').classList.add('active');
+            document.getElementById('content-resume').classList.remove('active');
+        });
+        
+        document.getElementById('tab-resume').addEventListener('click', function() {
+            document.getElementById('tab-resume').classList.add('active');
+            document.getElementById('tab-text').classList.remove('active');
+            document.getElementById('content-resume').classList.add('active');
+            document.getElementById('content-text').classList.remove('active');
+        });
+        
+        // File upload functionality
+        const dropArea = document.getElementById('drop-area');
+        const fileInput = document.getElementById('file-input');
+        const fileName = document.getElementById('file-name');
+        
+        dropArea.addEventListener('click', () => fileInput.click());
+        
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length) {
+                fileName.textContent = `Selected file: ${fileInput.files[0].name}`;
+            }
+        });
+        
+        ['dragover', 'dragenter'].forEach(eventName => {
+            dropArea.addEventListener(eventName, e => {
+                e.preventDefault();
+                dropArea.style.borderColor = '#4361ee';
+                dropArea.style.backgroundColor = 'rgba(67, 97, 238, 0.05)';
+            });
+        });
+        
+        ['dragleave', 'dragend'].forEach(eventName => {
+            dropArea.addEventListener(eventName, e => {
+                e.preventDefault();
+                dropArea.style.borderColor = '#ddd';
+                dropArea.style.backgroundColor = 'transparent';
+            });
+        });
+        
+        dropArea.addEventListener('drop', e => {
+            e.preventDefault();
+            dropArea.style.borderColor = '#ddd';
+            dropArea.style.backgroundColor = 'transparent';
+            
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                fileName.textContent = `Selected file: ${e.dataTransfer.files[0].name}`;
+            }
+        });
+        
+        // Handle analyze button
+        document.getElementById('analyze-btn').addEventListener('click', function() {
+            // In a real app, you would send the data to the server here
+            // For the demo, we'll just show the results section
+            document.getElementById('results').style.display = 'block';
+            
+            // Update the steps
+            document.querySelectorAll('.step').forEach(step => step.classList.add('active'));
+            
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({behavior: 'smooth'});
+            
+            // Update target role in results
+            const roleSelect = document.getElementById('role');
+            const targetRoleText = roleSelect.options[roleSelect.selectedIndex].text;
+            document.getElementById('target-role').textContent = targetRoleText;
+        });
+    </script>
+</body>
+</html>

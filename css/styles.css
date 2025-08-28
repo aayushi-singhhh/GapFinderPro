@@ -116,7 +116,7 @@ body {
     position: relative;
     min-height: 90vh;
     background: 
-        url('/assets/landing-page.png');
+        url('./assets/landing-page.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1265,19 +1265,19 @@ body {
 
 /* Path Card Background Images */
 .path-card.frontend-card {
-    background-image: url('/assets/frontend.svg');
+    background-image: url('./assets/frontend.svg');
     background-size: 120px 120px;
     background-position: center 70%;
 }
 
 .path-card.backend-card {
-    background-image: url('/assets/backend.svg');
+    background-image: url('./assets/backend.svg');
     background-size: 120px 120px;
     background-position: center 70%;
 }
 
 .path-card.fullstack-card {
-    background-image: url('/assets/fullstack.svg');
+    background-image: url('./assets/fullstack.svg');
     background-size: 120px 120px;
     background-position: center 70%;
 }
